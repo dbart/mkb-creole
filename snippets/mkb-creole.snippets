@@ -1,0 +1,189 @@
+# Some useful Unicode entities
+snippet nbsp
+	<<entity>>nbsp<</entity>>
+snippet mdash
+	<<entity>>mdash<</entity>>
+snippet ndash
+	<<entity>>ndash<</entity>>
+snippet amp
+	<<entity>>amp<</entity>>
+snippet ldquo
+	<<entity>>ldquo<</entity>>
+snippet rdquo
+	<<entity>>rdquo<</entity>>
+snippet lsquo
+	<<entity>>lsquo<</entity>>
+snippet rsquo
+	<<entity>>rsquo<</entity>>
+snippet reg
+	<<entity>>reg<</entity>>
+snippet copy
+	<<entity>>copy<</entity>
+snippet trade
+	<<entity>>trade<</entity>>
+snippet para
+	<<entity>>para<</entity>>
+snippet bull
+	<<entity>>bull<</entity>>
+snippet middot
+	<<entity>>middot<</entity>>
+snippet sect
+	<<entity>>sect<</entity>>
+
+snippet include
+	<<include slug="${1:slugname}">>
+snippet <<toc
+	<<toc>>
+snippet user
+	<<user username=${1:username}>>
+snippet sql
+	<<sql inline=False>>
+	${1}
+	<</sql>>
+snippet fixed
+	<<fixed>>${1}<</fixed>>
+snippet code inline false
+	<<code lang=${1:mysql} inline=false>>
+	${2}
+	<</code>>${3}
+snippet code inline true
+	<<code lang=${1:mysql} inline=true>>${2}<</code>> ${3}
+snippet table Table Style: default (darkheader-nospace-borders)
+	<<style class="darkheader-nospace-borders">>
+	|= ${1:Header}
+	|  ${2:Data}
+	<</style>>
+	${3}
+snippet table Table Style: none
+	|= ${1:Header}
+	|  ${2:Data}
+	${3}
+snippet table Table Style: borders
+	<<style class="borders">>
+	|= ${1:Header}
+	|  ${2:Data}
+	<</style>>
+	${3}
+snippet table Table Style: borders-side
+	<<style class="borders-side">>
+	|= ${1:Header}
+	|  ${2:Data}
+	<</style>>
+	${3}
+snippet table Table Style: darkheader
+	<<style class="darkheader">>
+	|= ${1:Header}
+	|  ${2:Data}
+	<</style>>
+	${3}
+snippet table Table Style: darkheader-side
+	<<style class="darkheader-side">>
+	|= ${1:Header}
+	|  ${2:Data}
+	<</style>>
+	${3}
+snippet table Table Style: darkheader-nospace
+	<<style class="darkheader-nospace">>
+	|= ${1:Header}
+	|  ${2:Data}
+	<</style>>
+	${3}
+snippet table Table Style: darkheader-nospace-side
+	<<style class="darkheader-nospace-side">>
+	|= ${1:Header}
+	|  ${2:Data}
+	<</style>>
+	${3}
+snippet table Table Style: darkheader-nospace-borders-side
+	<<style class="darkheader-nospace-borders-side">>
+	|= ${1:Header}
+	|  ${2:Data}
+	<</style>>
+	${3}
+snippet table Table Style: newspaper
+	<<style class="newspaper">>
+	|= ${1:Header}
+	|  ${2:Data}
+	<</style>>
+	${3}
+snippet table Table Style: newspaper-side
+	<<style class="newspaper-side">>
+	|= ${1:Header}
+	|  ${2:Data}
+	<</style>>
+	${3}
+snippet table Table Style: underheader
+	<<style class="underheader">>
+	|= ${1:Header}
+	|  ${2:Data}
+	<</style>>
+	${3}
+snippet table Table Style: underheader-lines
+	<<style class="underheader-lines">>
+	|= ${1:Header}
+	|  ${2:Data}
+	<</style>>
+	${3}
+snippet table Table Style: sideheader
+	<<style class="sideheader">>
+	|= ${1:Header}
+	|  ${2:Data}
+	<</style>>
+	${3}
+snippet table Table Style: sideheader-lines
+	<<style class="sideheader-lines">>
+	|= ${1:Header}
+	|  ${2:Data}
+	<</style>>
+	${3}
+snippet style style="color:gray;font-size:0.8em;font-style:italic;"
+	<<style style="${1:color:gray;font-size:0.8em;font-style:italic;}">>${2}<</style>>${3}
+snippet style style="font-size:0.8em;"
+	<<style style="${1:font-size:0.8em;}">>${2}<</style>>${3}
+
+snippet box blue box
+	<<style class="bluebox">>
+	${1}
+	<</style>>
+
+snippet box red box
+	<<style class="redbox">>
+	${1}
+	<</style>>
+
+snippet box green box
+	<<style class="greenbox">>
+	${1}
+	<</style>>
+
+snippet box yellow box
+	<<style class="yellowbox">>
+	${1}
+	<</style>>
+
+snippet box gray box
+	<<style class="graybox">>
+	${1}
+	<</style>>
+
+snippet link
+	[[${1:Link}|${2:Link name}]] ${3}
+snippet [[
+	[[${1:Link}|${2:Link name}]] ${3}
+snippet //
+	//${1}// ${2}
+snippet **
+	**${1}** ${2}
+snippet --
+	<<strike>>${1}<</strike>> ${2}
+snippet ^^
+	^^${1}^^ ${2}
+snippet ,,
+	,,${1},, ${2}
+snippet ##
+	##${1}## ${2}
+snippet __
+	__${1}__ ${2}
+snippet {{{
+	{{{${1}}}}${2}
+
