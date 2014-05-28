@@ -18,6 +18,7 @@ Download the zip file, navigate to the `~/.vim/` directory, and unzip the file.
 The files will be placed in their proper locations.
 
 To enable, add the following to `~/.vim/filetype.vim`:
+
     augroup filetypedetect
         autocmd BufRead,BufNewFile *.creole,*.mkb-creole,*.mkb setfiletype mkb-creole
     augroup END
