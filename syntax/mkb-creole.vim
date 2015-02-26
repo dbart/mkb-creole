@@ -44,7 +44,7 @@ syn region  wikiHead        start="^=" end="$" contains=wikiTT
 syn region  wikiBold        start="\*\*[^\* ]" end="\*\*" contains=wikiBoldItalic
 "try to not get confused with urls such as http://example.com
 "syn region  wikiItalic      start="[^:]\/\/"hs=s+1   end="[^:]\/\/"
-syn region  wikiItalic      start="\/\/"   end="[^:]\/\/" contains=wikiItalicBold
+syn region  wikiItalic      start="[^:]\/\/"   end="[^:]\/\/" contains=wikiItalicBold
 syn region  wikiUnderline   start="__" end="__"
 
 " strikeout syntax was removed from mkb-creole as it interferred with MariaDB
@@ -52,7 +52,7 @@ syn region  wikiUnderline   start="__" end="__"
 "syn region  wikiStrike      start="--" end="--"
 
 " regions for Bold and Italic with embedded Italic and Bold
-syn region wikiBoldItalic   contained start=+\/\/+ end=+[^:]\/\/+
+syn region wikiBoldItalic   contained start=+[^:]\/\/+ end=+[^:]\/\/+
 syn region wikiItalicBold   contained start=+\*\*[^\* ]+ end=+\*\*+
 
 syn region  wikiTT        start="\#\#[^\# ]" end="\#\#"
@@ -93,7 +93,7 @@ syn keyword entityName contained mdash nbsp amp ldquo rdquo lsquo rsquo reg copy
 syn keyword macroTagName contained code fixed sql style toc include entity booknav button
 
 " macro args
-syn keyword macroArg contained lang inline style class slug prev toc chapter next target
+syn keyword macroArg contained lang inline indent style class slug prev toc chapter next target
 
 " TODO expand macro names and args above so that only valid args for a given
 "      macro are highlighted
